@@ -22,16 +22,31 @@ if feature == "Home":
     st.write("Welcome to AI Interview Mirror")
 
 elif feature == "Eye Tracking":
-    st.write("Eye tracking module")
+    from modules.eye_tracking import track_eyes
+
+if st.button("Start Eye Tracking"):
+    track_eyes()
 
 elif feature == "Emotion Detection":
-    st.write("Emotion detection module")
+    from modules.emotion_detection import detect_emotion
+
+if st.button("Start Emotion Detection"):
+    detect_emotion()
 
 elif feature == "Speech Analysis":
-    st.write("Speech analysis module")
+   from modules.speech_to_text import speech_to_text
+
+if st.button("Start Speech Analysis"):
+    speech_to_text()
 
 elif feature == "Confidence Analysis":
-    st.write("Confidence analysis module")
+    from modules.confidence import analyze_confidence
+
+if st.button("Start Confidence Analysis"):
+    analyze_confidence()
 
 elif feature == "Cheating Detection":
-    st.write("Cheating detection module")
+    from modules.cheating_detection import detect_cheating
+
+if st.button("Start Cheating Detection"):
+    detect_cheating()
