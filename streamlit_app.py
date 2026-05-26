@@ -1,15 +1,8 @@
-import streamlit as st
+st.sidebar.title("Features")
 
-st.set_page_config(page_title="AI Interview Mirror", layout="wide")
-
-st.title("🎤 AI Interview Mirror")
-
-st.sidebar.header("Features")
-
-feature = st.sidebar.selectbox(
+module = st.sidebar.selectbox(
     "Choose Module",
     [
-        "Home",
         "Eye Tracking",
         "Emotion Detection",
         "Speech Analysis",
@@ -17,26 +10,22 @@ feature = st.sidebar.selectbox(
         "Cheating Detection"
     ]
 )
+if module == "Eye Tracking":
+    st.header("Eye Tracking")
+    st.info("Run locally for webcam access")
 
-if feature == "Home":
-    st.write("Welcome to AI Interview Mirror")
+elif module == "Emotion Detection":
+    st.header("Emotion Detection")
+    st.info("Run locally for webcam access")
 
-elif feature == "Eye Tracking":
-    st.subheader("Eye Tracking")
-    st.success("Run locally in VS Code for webcam access")
-
-elif feature == "Emotion Detection":
-    st.subheader("Emotion Detection")
-    st.success("Run locally in VS Code for camera access")
-
-elif feature == "Speech Analysis":
-    st.subheader("Speech Analysis")
+elif module == "Speech Analysis":
+    st.header("Speech Analysis")
     st.success("Run locally for microphone access")
 
-elif feature == "Confidence Analysis":
-    st.subheader("Confidence Analysis")
-    st.success("Run locally in Python environment")
+elif module == "Confidence Analysis":
+    st.header("Confidence Analysis")
+    st.write("Analyze speaking confidence")
 
-elif feature == "Cheating Detection":
-    st.subheader("Cheating Detection")
-    st.success("Run locally for webcam monitoring")
+elif module == "Cheating Detection":
+    st.header("Cheating Detection")
+    st.warning("Detect suspicious movements")
