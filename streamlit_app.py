@@ -22,31 +22,21 @@ if feature == "Home":
     st.write("Welcome to AI Interview Mirror")
 
 elif feature == "Eye Tracking":
-    from modules.eye_tracking import track_eyes
-
-if st.button("Start Eye Tracking"):
-    track_eyes()
+    st.subheader("Eye Tracking")
+    st.success("Run locally in VS Code for webcam access")
 
 elif feature == "Emotion Detection":
-    from modules.emotion_detection import detect_emotion
-
-if st.button("Start Emotion Detection"):
-    detect_emotion()
+    st.subheader("Emotion Detection")
+    st.success("Run locally in VS Code for camera access")
 
 elif feature == "Speech Analysis":
-   from modules.speech_to_text import speech_to_text
-
-if st.button("Start Speech Analysis"):
-    speech_to_text()
+    st.subheader("Speech Analysis")
+    st.success("Run locally for microphone access")
 
 elif feature == "Confidence Analysis":
-    from modules.confidence import analyze_confidence
-
-if st.button("Start Confidence Analysis"):
-    analyze_confidence()
+    st.subheader("Confidence Analysis")
+    st.success("Run locally in Python environment")
 
 elif feature == "Cheating Detection":
-    from modules.cheating_detection import detect_cheating
-
-if st.button("Start Cheating Detection"):
-    detect_cheating()
+    st.subheader("Cheating Detection")
+    st.success("Run locally for webcam monitoring")
