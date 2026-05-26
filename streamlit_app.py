@@ -1,3 +1,5 @@
+import streamlit as st
+
 st.sidebar.title("Features")
 
 module = st.sidebar.selectbox(
