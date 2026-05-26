@@ -1,13 +1,12 @@
 # AI Interview Mirror
 
-AI Interview Mirror is an AI-powered interview preparation system that analyzes candidate behavior, speech, and confidence during mock interviews.
+AI Interview Mirror is an AI-powered interview analysis system built using Python, Streamlit, OpenCV, and MediaPipe.
 
 ## Features
 
-- Eye Tracking Detection
+- Eye Tracking
 - Emotion Detection
-- Speech-to-Text Conversion
-- AI Feedback Generation
+- Speech Analysis
 - Confidence Analysis
 - Cheating Detection
 - Streamlit Dashboard
@@ -19,45 +18,24 @@ AI Interview Mirror is an AI-powered interview preparation system that analyzes 
 - MediaPipe
 - Streamlit
 - SpeechRecognition
-- Google Gemini API
 
-## Project Structure
+## Live Demo
 
-```bash
-AI-INTERVIEW-MIRROR1/
-│
-├── modules/
-├── screenshots/
-├── app.py
-├── dashboard.py
-├── requirements.txt
-└── README.md
-```
+Streamlit App:
+https://ai-interview-mirror-tc8nectlxtrmpdvxsmyt8b.streamlit.app
+
+## GitHub Repository
+
+https://github.com/Pavankumar0814/AI-Interview-Mirror
 
 ## Screenshots
 
-### Dashboard
-![Dashboard](screenshots/dashboard.png)
+Add screenshots here.
 
-### Eye Tracking
-![Eye Tracking](screenshots/eye_tracking.png)
+## Future Improvements
 
-### App
-![App](screenshots/app.png)
-
-## How to Run
-
-```bash
-pip install -r requirements.txt
-python app.py
-```
-
-Run dashboard:
-
-```bash
-streamlit run dashboard.py
-```
-
-## Author
-
-Pavan Kumar
+- AI feedback generation
+- Resume analysis
+- PDF interview reports
+- Voice emotion analysis
+- Interview scoring system
