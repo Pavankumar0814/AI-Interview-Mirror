@@ -5,5 +5,3 @@ streamlit-webrtc
 SpeechRecognition
 av
 numpy
-fer
-tensorflow
