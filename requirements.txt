@@ -1,7 +1,9 @@
 streamlit
-opencv-python
+opencv-python-headless
 mediapipe
 streamlit-webrtc
 SpeechRecognition
 av
 numpy
+fer
+tensorflow
