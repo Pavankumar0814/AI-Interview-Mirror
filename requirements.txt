@@ -1,7 +1,8 @@
 streamlit
 opencv-python-headless
-mediapipe==0.10.9
-streamlit-webrtc
-SpeechRecognition
-av
+mediapipe==0.10.35
 numpy
+pandas
+SpeechRecognition
+streamlit-webrtc
+av
