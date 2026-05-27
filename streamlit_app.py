@@ -1,7 +1,7 @@
 import cv2
 from mediapipe.python import solutions as mp_solutions
 import av
-mp_face_detection = mp.solutions.face_detection
+mp_face_detection = mp_solutions.face_detection
 face_detection = mp_face_detection.FaceDetection()
 import streamlit as st
 from streamlit_webrtc import webrtc_streamer
