@@ -2,6 +2,9 @@ setuptools>=68.0.0
 wheel
 
 streamlit==1.35.0
+streamlit-webrtc==0.47.7
+av==11.0.0
+
 numpy==1.23.5
 protobuf==3.20.3
 opencv-python-headless==4.8.1.78
