@@ -6,6 +6,14 @@ face_detection = mp_face_detection.FaceDetection()
 import streamlit as st
 from streamlit_webrtc import webrtc_streamer
 
+st.set_page_config(
+    page_title="AI Interview Mirror",
+    page_icon="🎤",
+    layout="wide"
+)
+
+st.sidebar.title("Features")
+
 st.markdown("""
 <style>
 
@@ -33,14 +41,6 @@ h1, h2, h3 {
 
 </style>
 """, unsafe_allow_html=True)
-
-st.set_page_config(
-    page_title="AI Interview Mirror",
-    page_icon="🎤",
-    layout="wide"
-)
-
-st.sidebar.title("Features")
 
 module = st.sidebar.selectbox(
     "Choose Module",
